@@ -1,8 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
  
 void randomize(int *a, int *b)
-{
-    // TODO: randomize a, b
+{   
+    srand(time(NULL));
+    a = (rand() % 6) + 1;
+    srand(time(NULL));
+    b = (rand() % 6) + 1;
+    // DONE: randomize a, b
 }
  
 int main()
